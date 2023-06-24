@@ -1,0 +1,23 @@
+.SortSelection {
+	display: flex;
+	align-items: center;
+
+	&__btn, &__select {
+		font-size: 16px;
+		font-family: 'Archivo';
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		color: var(--light-grey-color);
+
+		&--isDisabled {
+			cursor: not-allowed;
+		}
+	}
+}

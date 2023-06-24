@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Archivo';
+	src: local('Archivo'), url('../src/assets/fonts/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+:root {
+	font-family: 'Archivo', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	padding: 0;
+	margin: 0 auto;
+
+	max-width: 1520px;
+
+	/* color variables */
+	--header-border-color: #e4e4e4;
+	--category-name-color: #656565;
+	--card-title-color: #000000;
+	--generic-text-color: #ffffff;
+	--light-grey-color: #9B9B9B;
+	--black-color: #000000;
+
+	// generic vairables
+	--extra-pixels: 10px;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+input[type="checkbox"] {
+	margin: 5px 12px;
+}

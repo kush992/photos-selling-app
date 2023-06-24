@@ -1,0 +1,19 @@
+.ProductFilter {
+	
+	label {
+		cursor: pointer;
+	}
+
+	&__title {
+		font-weight: 700;
+		margin: 20px 0;
+	}
+
+	&__categoryList {
+		margin: 20px 0;
+	}
+
+	&__separator {
+		border: 2px solid var(--header-border-color);
+	}
+}

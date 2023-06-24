@@ -1,0 +1,15 @@
+.Pagination {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+
+	&__pageNum {
+		padding: 5px;
+		opacity: 0.5;
+
+		&--isBold {
+			opacity: 1;
+			font-weight: 700;
+		}
+	}
+}
