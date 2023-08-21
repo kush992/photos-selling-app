@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { CartItemsObj } from 'shared/interface';
 import Cart from '../../components/cart';
 import { RootState } from '../../reduxStore/store';
-import BejamasIcon from '../../assets/BejamasIcon.svg';
+import AppIcon from '../../assets/AppIcon.png';
 import CartIcon from '../../assets/CartIcon.svg';
 import useClickOutside from '../../utils/useClickOutside';
 import { toggleCart } from '../../reduxStore/cartReducer';
@@ -21,7 +21,7 @@ const Navbar = () => {
 
 	return (
 		<div className='Navbar'>
-			<img src={BejamasIcon} alt='site_logo' loading='lazy' width={159} height={26} />
+			<img src={AppIcon} alt='site_logo' loading='lazy' width={'auto'} height={26} />
 			<div
 				onClick={() => dispatch(toggleCart(true))}
 				className={cn('Navbar__cartIcon', {
