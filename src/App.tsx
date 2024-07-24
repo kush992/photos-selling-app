@@ -4,6 +4,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './reduxStore/store';
 
 import './App.scss';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 	const Navbar = lazy(() => import('./components/navbar'));
@@ -13,6 +14,7 @@ function App() {
 		<Suspense fallback={'loading...'}>
 			<Provider store={store}>
 				<PersistGate loading={null} persistor={persistor}>
+					<Analytics />
 					<Navbar />
 					<Products />
 				</PersistGate>
